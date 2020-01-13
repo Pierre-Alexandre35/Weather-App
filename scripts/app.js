@@ -31,7 +31,9 @@ const loadCities = (city) => {
 }
 
 const temp = () =>{
+    console.log(1);
     window.addEventListener("click", e=>{
-        console.log(e.target.parentElement.children[0].innerHTML);
+        const city = e.target.parentElement.children[0].innerHTML;
+        apply(city);
     })
 }

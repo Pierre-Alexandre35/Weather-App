@@ -8,7 +8,6 @@ const getCity = async(city) =>{
     const query = `?apikey=${key}&q=${city}`;
     const response = await fetch(base + query);
     const data = await response.json();
-    console.log(data[0].Key);
     return(data[0].Key);
 
 }
@@ -22,6 +21,9 @@ const getWeather = async(id) =>{
 
 }
 
-getCity("Paris").then(data =>{
+const apply = async(city) => {
+getCity(city).then(data =>{
     return getWeather(data);
 }).catch(err=> console.log(err));
+
+}

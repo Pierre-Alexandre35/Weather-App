@@ -16,5 +16,7 @@
 </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/hello.js"></script>
+
 </body>
 </html>
